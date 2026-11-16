@@ -1,0 +1,62 @@
+{
+  "project": "outshore_upwork_portfolio_repo",
+  "spec": "UPWORK.TXT",
+  "status": "success",
+  "repo_url": "https://github.com/zhetai/outshore-service-landing",
+  "commit_sha": "31e2fd6c57d845b0cc3c578a4a7466dbacfc8ed1",
+  "default_branch": "main",
+  "mcp_server_used": "none",
+  "recording_tool": "puppeteer-core (CDP) + local Google Chrome, headless 1440x900",
+  "gif_size_mb": 4.45,
+  "gif_duration_seconds": 14.95,
+  "gif_dimensions": "660x412",
+  "screenshots_captured": [
+    "assets/screenshot-hero.png",
+    "assets/screenshot-catalog.png",
+    "assets/screenshot-scope.png"
+  ],
+  "readme_sections_present": [
+    "客户故事开头",
+    "页面 GIF（首屏可见）",
+    "适合 / 不适合的客户画像",
+    "四条服务线摘要",
+    "技术实现说明",
+    "合规边界与免责声明",
+    "Upwork 站内沟通说明",
+    "License"
+  ],
+  "demo_md_fields_present": ["title", "summary", "skills", "deliverables", "disclaimer"],
+  "compliance_disclaimers_verified": {
+    "index.html": true,
+    "README.md": true,
+    "DEMO.md": true
+  },
+  "validation_results": {
+    "index_html_byte_identical_to_outshore_html": true,
+    "index_html_blob_sha": "b213862a72a9a71925474567feeceada34a2909a",
+    "page_audit_errors": [],
+    "prices_unchanged": true,
+    "service_boundary_unchanged": true,
+    "gif_exists": true,
+    "gif_under_5mb": true,
+    "screenshots_exist": true,
+    "secret_scan": "clean (no tokens, emails, keys, or off-platform contact details)",
+    "target_repo_visibility": "public"
+  },
+  "deviations_from_spec": [
+    "visibility=public: the user explicitly requested a public repository (spec default was private and required approval before public).",
+    "No Pagecast/demosmith MCP: pagecast was unavailable in this environment. The demo GIF was recorded directly through Chrome DevTools Protocol with the interaction sequence from recording_spec.",
+    "assets/demo.mp4 not produced (optional in spec).",
+    "Interaction recording is a real session (scroll, hover, FAQ click); frames were captured at ~1.2 fps and encoded to GIF at 660x412 to stay under 5 MB."
+  ],
+  "human_action_required": [
+    "Review assets/demo.gif: confirm the scroll/hover/FAQ sequence reads clearly and the brand presentation is acceptable.",
+    "Confirm the README customer story matches the real positioning and tone.",
+    "Decide whether to enable GitHub Pages (or external hosting) and add the live URL to the Upwork portfolio entry.",
+    "Paste the English copy from DEMO.md into the Upwork portfolio project."
+  ],
+  "next_actions": [
+    "Optionally publish via GitHub Pages (Settings → Pages → main / root) and link it from Upwork.",
+    "Keep index.html in sync with outshore.html when the source page changes (copy verbatim, never edit in place)."
+  ]
+}
