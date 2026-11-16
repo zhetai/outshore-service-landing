@@ -101,6 +101,22 @@ valid.
 
 ---
 
+## 来源仓库 · Source repositories
+
+本仓库是一个独立演示，除 `index.html`（`outshore` 页面源文件的逐字副本）外，**不包含**下列仓库的代码或数据。它们同属香港公司 / 离岸合规方向的项目集，作为本工具的上下文与来源登记在案（完整清单见 [`docs/SOURCES.md`](docs/SOURCES.md)）。
+
+| 仓库（均为 private） | 角色 | 技术栈 | 与本品的关系 |
+| --- | --- | --- | --- |
+| `wanqushangpai-odoo` | 香港公司 Odoo 18 记账中台：SME-FRS 科目表、多币种流水采集、离岸豁免辅助核算 | Odoo 18 · Python · PostgreSQL · Docker | 账务与审计底稿来源；本工具的自检项与之对应 |
+| `wanqushangpai-odoo-infra` | 上述中台的一键部署与运维 | Docker Compose · Nginx · Certbot | 部署层，与本工具无运行时依赖 |
+| `group-sop` | 竞标 / 经纪 / PDF 解析引擎 | React 19 · TypeScript · Cloudflare Workers · D1 · R2 | 同一业务方向的工程样例 |
+| `crypto-reconciliation-cleaner` | 离线加密交易对账清洗器（单文件） | 单文件 HTML/JS | 同一设计取向：零依赖、数据不出本机 |
+| `outshore` | 离岸证据链技术劳务落地页 | 单文件 HTML/JS | 本仓库页面的直接来源：`index.html` 为 `outshore.html` 的逐字副本 |
+
+> 以上仓库目前为私有，公开链接无法直接访问；如需演示或源码 walkthrough，请通过 [GitHub 主页](https://github.com/zhetai) 联系。本仓库除页面源文件外不复制它们的代码，也不含其客户或业务数据。
+
+---
+
 ## License
 
 [MIT](LICENSE) © 2026 OUTSHORE

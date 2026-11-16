@@ -41,6 +41,7 @@ Compliance-Aware Copywriting · Accessibility · Technical Documentation
 - `assets/screenshot-hero.png`, `assets/screenshot-catalog.png`, `assets/screenshot-scope.png`
 - `README.md` — project story, service catalog, technical notes
 - `DEMO.md` — this portfolio copy
+- `docs/SOURCES.md` — source-repository registry and desensitization boundary
 - `LICENSE`, `SECURITY.md`
 
 ## Disclaimer
